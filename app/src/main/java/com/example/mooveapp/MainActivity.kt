@@ -449,6 +449,7 @@ fun imagePourCours(nom: String): Int {
         "musée", "musee" -> R.drawable.musee
         "natation" -> R.drawable.natation
         "tennis" -> R.drawable.tennis
+        "dance", "danse" -> R.drawable.dance
         "zoo" -> R.drawable.zoo
         else -> R.drawable.logo93moove // image par défaut
     }

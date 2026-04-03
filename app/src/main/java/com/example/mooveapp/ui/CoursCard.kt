@@ -10,6 +10,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.mooveapp.model.Cours
+import com.example.mooveapp.imagePourCours
 
 @Composable
 fun CarteCours(
@@ -27,7 +28,7 @@ fun CarteCours(
         Column {
             // Image du cours
             Image(
-                painter = painterResource(id = cours.imageRes),
+                painter = painterResource(id = imagePourCours(cours.nom)),
                 contentDescription = cours.nom,
                 modifier = Modifier
                     .fillMaxWidth()
